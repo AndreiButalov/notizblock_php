@@ -1,9 +1,9 @@
 body {
   margin: 0;
   font-family: Inter, system-ui, sans-serif;
-  background: #f8fafc;
+  background: #0c2642;
   color: #111827;
-  height: 100vh;
+  height: 100%;
 }
 
 #app {
