@@ -4,7 +4,7 @@
 
       <div class="flex items-center gap-2">
         <img src="../assets/img/keep_2020q4_48dp.png" alt="">
-        <h1>Notizblock</h1>
+        <router-link class="link" to="/">Notizblock</router-link>
       </div>
 
     </div>
