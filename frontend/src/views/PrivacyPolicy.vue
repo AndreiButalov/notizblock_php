@@ -7,7 +7,6 @@
 
       <div class="mt-6 flex justify-center overflow-y-auto">
         <div class="w-full max-w-4xl prose prose-lg">
-
           <p class="text-base">Stand: 25. Juli 2026</p>
 
           <h2 class="mb-0 text-2xl font-bold">Inhaltsübersicht</h2>
