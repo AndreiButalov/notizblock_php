@@ -12,6 +12,10 @@ body {
   @apply border p-2 rounded-lg hover:bg-[#e8d5bd] cursor-pointer transition;
 }
 
+.link {
+  @apply cursor-pointer;
+}
+
 #app {
   min-height: 100vh;
 }
