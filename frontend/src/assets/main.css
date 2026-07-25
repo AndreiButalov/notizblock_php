@@ -1,16 +1,13 @@
+@import "tailwindcss";
+
 body {
   margin: 0;
   font-family: Inter, system-ui, sans-serif;
   background: #0c2642;
   color: #111827;
-  height: 100%;
+  min-height: 100vh;
 }
 
 #app {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.app-shell {
-  padding: 2rem;
+  min-height: 100vh;
 }
