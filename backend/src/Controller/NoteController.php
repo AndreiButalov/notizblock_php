@@ -29,6 +29,23 @@ class NoteController extends AbstractController
         return $this->json($data);
     }
 
+    #[Route('/api/notes/{id}', name: 'api_notes_show', methods: ['GET'])]
+    public function show(int $id, NoteRepository $noteRepository): JsonResponse
+    {
+        $note = $noteRepository->find($id);
+
+        if (!$note) {
+            return new JsonResponse(['error' => 'Note not found'], 404);
+        }
+
+        return $this->json([
+            'id' => $note->getId(),
+            'title' => $note->getTitle(),
+            'content' => $note->getContent(),
+            'createdAt' => $note->getCreatedAt()?->format(DATE_ATOM),
+        ]);
+    }
+
     #[Route('/api/notes', name: 'api_notes_create', methods: ['POST'])]
     public function create(Request $request, EntityManagerInterface $entityManager): JsonResponse
     {
