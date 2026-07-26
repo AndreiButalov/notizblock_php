@@ -1,7 +1,7 @@
 <template>
   <div class="flex min-h-screen items-center justify-center">
     <div class="flex h-192 w-152 flex-col rounded-xl bg-[#FAEBD7] p-8">
-      <h1 class="mb-4 text-2xl font-bold">Hallo</h1>
+      <h1 class="mb-4 text-2xl font-bold">Notizen:</h1>
 
       <router-link
         class="mb-6 w-fit rounded-lg bg-amber-300 px-4 py-2 transition hover:bg-amber-400"
@@ -15,7 +15,7 @@
           <div
             v-for="n in 20"
             :key="n"
-            class="flex h-64 flex-col rounded-xl border border-gray-300 bg-white p-4 shadow"
+            class="flex h-64 flex-col rounded-xl border border-gray-300 hover:bg-[#f7f5f3] bg-white p-4 shadow"
           >
             <h2 class="mb-3 truncate text-xl font-bold">Titel der Notiz {{ n }}</h2>
 
