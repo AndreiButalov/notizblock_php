@@ -10,7 +10,6 @@
         + Notiz hinzufügen
       </router-link>
 
-      <!-- Notizen Liste -->
       <div class="flex-1 overflow-y-auto pr-2">
         <div class="grid grid-cols-2 gap-5">
           <div
@@ -18,25 +17,22 @@
             :key="note.id"
             class="flex h-64 flex-col rounded-xl border border-gray-300 bg-white p-4 shadow hover:bg-[#f7f5f3]"
           >
-            <!-- Titel -->
             <h2 class="mb-3 truncate text-xl font-bold">
               {{ note.title }}
             </h2>
 
-            <!-- Inhalt -->
             <div
               class="mb-3 flex-1 overflow-y-auto wrap-break-word text-sm leading-6 text-gray-700"
             >
               {{ note.content }}
             </div>
 
-            <!-- Datum -->
             <p class="mb-4 text-xs text-gray-500">
               {{ formatDate(note.createdAt) }}
             </p>
 
             <div class="mt-auto flex justify-between gap-2">
-              <button class="btn">Bearbeiten</button>
+              <router-link class="btn" to="/editNotizen">Bearbeiten</router-link>
 
               <button class="btn" @click="deleteNote(note.id)">Löschen</button>
             </div>

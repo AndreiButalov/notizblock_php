@@ -3,6 +3,7 @@ import NotizblockContent from '../views/NotizblockContent.vue'
 import Imprint from '../views/Imprint.vue'
 import PrivacyPolicy from '../views/PrivacyPolicy.vue'
 import Notizen from '../views/Notizen.vue'
+import EditNote from '../views/EditNote.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,6 +27,11 @@ const router = createRouter({
       path: '/privacy_policy',
       name: 'privacy_policy',
       component: PrivacyPolicy,
+    },
+    {
+      path: '/editNotizen',
+      name: 'editNotizen',
+      component: EditNote,
     },
   ],
 })
