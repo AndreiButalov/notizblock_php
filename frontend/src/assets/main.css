@@ -9,11 +9,19 @@ body {
 }
 
 .btn {
-  @apply border p-2 rounded-lg hover:bg-[#e8d5bd] cursor-pointer transition;
+  border: 1px solid;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #e8d5bd;
 }
 
 .link {
-  @apply cursor-pointer;
+  cursor: pointer;
 }
 
 #app {
