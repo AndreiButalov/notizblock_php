@@ -70,15 +70,12 @@ const notes = ref([]);
 const getNotes = async () => {
   try {
     const response = await api.get("/notes");
-    console.log(JSON.stringify(response.data, null, 2));
     notes.value = response.data;
   } catch (error) {
     console.log(error);
   }
 };
 
-
-// Datum formatieren
 const formatDate = (date) => {
   if (!date) return "";
 
