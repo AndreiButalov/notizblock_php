@@ -30,13 +30,13 @@
 
             <div class="mt-auto flex justify-between gap-2">
               <button
-                class="flex-1 rounded-lg bg-blue-500 px-3 py-2 text-white transition hover:bg-blue-600"
+                class="btn"
               >
                 Bearbeiten
               </button>
 
               <button
-                class="flex-1 rounded-lg bg-red-500 px-3 py-2 text-white transition hover:bg-red-600"
+                class="btn"
               >
                 Löschen
               </button>
