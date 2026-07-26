@@ -45,30 +45,22 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import api from '@/services/api'
+import { fetchNotes, deleteNote as deleteNoteApi } from '@/services/notes'
+import { formatDate } from '@/utils/date'
 
 const notes = ref([])
-const noteToDelete = ref(null)
 
 const getNotes = async () => {
   try {
-    const response = await api.get('/notes')
-    notes.value = response.data
+    notes.value = await fetchNotes()
   } catch (error) {
     console.log(error)
   }
 }
 
-const formatDate = (date) => {
-  if (!date) return ''
-
-  return new Date(date).toLocaleDateString('de-DE')
-}
-
 const deleteNote = async (id) => {
   try {
-    await api.delete(`/notes/${id}`)
-
+    await deleteNoteApi(id)
     notes.value = notes.value.filter((note) => note.id !== id)
   } catch (error) {
     console.error(error)

@@ -53,7 +53,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import api from '@/services/api'
+import { fetchNote, updateNote } from '@/services/notes'
 
 const route = useRoute()
 const router = useRouter()
@@ -74,9 +74,9 @@ const loadNote = async () => {
   error.value = ''
 
   try {
-    const response = await api.get(`/notes/${noteId}`)
-    title.value = response.data.title
-    content.value = response.data.content
+    const data = await fetchNote(noteId)
+    title.value = data.title
+    content.value = data.content
   } catch (err) {
     error.value = 'Notiz konnte nicht geladen werden.'
     console.error(err)
@@ -92,7 +92,7 @@ const saveNote = async () => {
   }
 
   try {
-    await api.put(`/notes/${noteId}`, {
+    await updateNote(noteId, {
       title: title.value,
       content: content.value,
     })

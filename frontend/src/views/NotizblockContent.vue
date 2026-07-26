@@ -35,7 +35,7 @@
 <script setup>
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
-import api from '@/services/api';
+import { createNote } from '@/services/notes';
 
 const router = useRouter();
 const form = ref({ title: '', content: '' });
@@ -54,7 +54,7 @@ const submitNote = async () => {
   message.value = '';
 
   try {
-    await api.post('/notes', {
+    await createNote({
       title: form.value.title.trim(),
       content: form.value.content.trim(),
     });
