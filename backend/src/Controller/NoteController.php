@@ -56,6 +56,7 @@ class NoteController extends AbstractController
         ], 201);
     }
 
+
     #[Route('/api/notes/{id}', name: 'api_notes_delete', methods: ['DELETE'])]
     public function delete(
         int $id,
@@ -73,4 +74,46 @@ class NoteController extends AbstractController
 
         return new JsonResponse(['message' => 'Note deleted']);
     }
+
+
+    #[Route('/api/notes/{id}', name: 'api_notes_update', methods: ['PUT'])]
+    public function update(
+        int $id,
+        Request $request,
+        NoteRepository $noteRepository,
+        EntityManagerInterface $em
+    ): JsonResponse {
+        $note = $noteRepository->find($id);
+
+        if (!$note) {
+            return new JsonResponse(['error' => 'Note not found'], 404);
+        }
+
+        $data = json_decode($request->getContent(), true);
+        $title = $data['title'] ?? null;
+        $content = $data['content'] ?? null;
+
+        if (!$title) {
+            return new JsonResponse(['error' => 'Title is required'], 400);
+        }
+
+        if (!$content) {
+            return new JsonResponse(['error' => 'Title is required'], 400);
+        }
+        
+
+        $note->setTitle($title);
+        $note->setContent($content);
+
+        $em->flush();
+
+        return new JsonResponse([
+            'message' => 'Note updated',
+            'id' => $note->getId(),
+            'title' => $note->getTitle(),
+            'content' => $note->getContent()
+        ]);
+    }
+
+
 }

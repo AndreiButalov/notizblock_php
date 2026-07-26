@@ -5,3 +5,15 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+
+const noteId = route.params.id
+
+
+console.log(noteId)
+
+</script>

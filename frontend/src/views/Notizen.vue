@@ -32,7 +32,7 @@
             </p>
 
             <div class="mt-auto flex justify-between gap-2">
-              <router-link class="btn" to="/editNotizen">Bearbeiten</router-link>
+              <router-link class="btn" :to="`/editNotizen/${note.id}`"> Bearbeiten </router-link>
 
               <button class="btn" @click="deleteNote(note.id)">Löschen</button>
             </div>
@@ -65,13 +65,11 @@ const formatDate = (date) => {
   return new Date(date).toLocaleDateString('de-DE')
 }
 
-
 const deleteNote = async (id) => {
   try {
     await api.delete(`/notes/${id}`)
 
-    notes.value = notes.value.filter(note => note.id !== id)
-
+    notes.value = notes.value.filter((note) => note.id !== id)
   } catch (error) {
     console.error(error)
   }
