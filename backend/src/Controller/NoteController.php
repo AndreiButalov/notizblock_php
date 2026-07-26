@@ -55,4 +55,22 @@ class NoteController extends AbstractController
             'createdAt' => $note->getCreatedAt()?->format(DATE_ATOM),
         ], 201);
     }
+
+    #[Route('/api/notes/{id}', name: 'api_notes_delete', methods: ['DELETE'])]
+    public function delete(
+        int $id,
+        NoteRepository $noteRepository,
+        EntityManagerInterface $em
+    ): JsonResponse {
+        $note = $noteRepository->find($id);
+
+        if (!$note) {
+            return new JsonResponse(['error' => 'Note not found'], 404);
+        }
+
+        $em->remove($note);
+        $em->flush();
+
+        return new JsonResponse(['message' => 'Note deleted']);
+    }
 }

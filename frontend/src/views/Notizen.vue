@@ -13,18 +13,15 @@
       <!-- Notizen Liste -->
       <div class="flex-1 overflow-y-auto pr-2">
         <div class="grid grid-cols-2 gap-5">
-
           <div
             v-for="note in notes"
             :key="note.id"
             class="flex h-64 flex-col rounded-xl border border-gray-300 bg-white p-4 shadow hover:bg-[#f7f5f3]"
           >
-
             <!-- Titel -->
             <h2 class="mb-3 truncate text-xl font-bold">
               {{ note.title }}
             </h2>
-            
 
             <!-- Inhalt -->
             <div
@@ -33,57 +30,58 @@
               {{ note.content }}
             </div>
 
-
             <!-- Datum -->
             <p class="mb-4 text-xs text-gray-500">
               {{ formatDate(note.createdAt) }}
             </p>
 
-
-            <!-- Buttons -->
             <div class="mt-auto flex justify-between gap-2">
-              <button class="btn">
-                Bearbeiten
-              </button>
+              <button class="btn">Bearbeiten</button>
 
-              <button class="btn">
-                Löschen
-              </button>
+              <button class="btn" @click="deleteNote(note.id)">Löschen</button>
             </div>
-
           </div>
-
         </div>
       </div>
-
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue";
-import api from "@/services/api";
+import { ref, onMounted } from 'vue'
+import api from '@/services/api'
 
-const notes = ref([]);
-
+const notes = ref([])
+const noteToDelete = ref(null)
 
 const getNotes = async () => {
   try {
-    const response = await api.get("/notes");
-    notes.value = response.data;
+    const response = await api.get('/notes')
+    notes.value = response.data
   } catch (error) {
-    console.log(error);
+    console.log(error)
   }
-};
+}
 
 const formatDate = (date) => {
-  if (!date) return "";
+  if (!date) return ''
 
-  return new Date(date).toLocaleDateString("de-DE");
-};
+  return new Date(date).toLocaleDateString('de-DE')
+}
 
+
+const deleteNote = async (id) => {
+  try {
+    await api.delete(`/notes/${id}`)
+
+    notes.value = notes.value.filter(note => note.id !== id)
+
+  } catch (error) {
+    console.error(error)
+  }
+}
 
 onMounted(() => {
-  getNotes();
-});
+  getNotes()
+})
 </script>
