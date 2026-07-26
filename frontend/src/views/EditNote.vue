@@ -20,7 +20,7 @@
           <textarea
             id="content"
             v-model="content"
-            class="w-full min-h-40` rounded border border-gray-300 bg-white px-3 py-2"
+            class="w-full min-h-40` resize-none  rounded border border-gray-300 bg-white px-3 py-2"
             placeholder="Notizinhalt eingeben"
           ></textarea>
         </div>
