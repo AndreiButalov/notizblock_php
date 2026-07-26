@@ -77,7 +77,7 @@
           </p>
           <ul>
             <li>
-              <strong>Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO)</strong> - Die betroffene
+              <strong>Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO</strong> - Die betroffene
               Person hat ihre Einwilligung in die Verarbeitung der sie betreffenden
               personenbezogenen Daten für einen spezifischen Zweck oder mehrere bestimmte Zwecke
               gegeben.
@@ -85,14 +85,14 @@
             <li>
               <strong
                 >Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b)
-                DSGVO)</strong
+                DSGVO</strong
               >
               - Die Verarbeitung ist für die Erfüllung eines Vertrags, dessen Vertragspartei die
               betroffene Person ist, oder zur Durchführung vorvertraglicher Maßnahmen erforderlich,
               die auf Anfrage der betroffenen Person erfolgen.
             </li>
             <li>
-              <strong>Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)</strong> - die
+              <strong>Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO</strong> - die
               Verarbeitung ist zur Wahrung der berechtigten Interessen des Verantwortlichen oder
               eines Dritten notwendig, vorausgesetzt, dass die Interessen, Grundrechte und
               Grundfreiheiten der betroffenen Person, die den Schutz personenbezogener Daten
@@ -103,7 +103,7 @@
             <strong>Nationale Datenschutzregelungen in Deutschland: </strong>Zusätzlich zu den
             Datenschutzregelungen der DSGVO gelten nationale Regelungen zum Datenschutz in
             Deutschland. Hierzu gehört insbesondere das Gesetz zum Schutz vor Missbrauch
-            personenbezogener Daten bei der Datenverarbeitung (Bundesdatenschutzgesetz – BDSG). Das
+            personenbezogener Daten bei der Datenverarbeitung (Bundesdatenschutzgesetz BDSG). Das
             BDSG enthält insbesondere Spezialregelungen zum Recht auf Auskunft, zum Recht auf
             Löschung, zum Widerspruchsrecht, zur Verarbeitung besonderer Kategorien
             personenbezogener Daten, zur Verarbeitung für andere Zwecke und zur Übermittlung sowie
@@ -150,7 +150,7 @@
             Im Rahmen unserer Verarbeitung von personenbezogenen Daten kommt es vor, dass diese an
             andere Stellen, Unternehmen, rechtlich selbstständige Organisationseinheiten oder
             Personen übermittelt beziehungsweise ihnen gegenüber offengelegt werden. Zu den
-            Empfängern dieser Daten können z. B. mit IT-Aufgaben beauftragte Dienstleister gehören
+            Empfängern dieser Daten können z.B. mit IT-Aufgaben beauftragte Dienstleister gehören
             oder Anbieter von Diensten und Inhalten, die in eine Website eingebunden sind. In
             solchen Fällen beachten wir die gesetzlichen Vorgaben und schließen insbesondere
             entsprechende Verträge bzw. Vereinbarungen, die dem Schutz Ihrer Daten dienen, mit den
@@ -159,7 +159,7 @@
 
           <h2 id="m24">Internationale Datentransfers</h2>
           <p>
-            Datenverarbeitung in Drittländern: Sofern wir Daten in einem Drittland (d. h., außerhalb
+            Datenverarbeitung in Drittländern: Sofern wir Daten in einem Drittland (d.h., außerhalb
             der Europäischen Union (EU), des Europäischen Wirtschaftsraums (EWR)) verarbeiten oder
             die Verarbeitung im Rahmen der Inanspruchnahme von Diensten Dritter oder der Offenlegung
             bzw. Übermittlung von Daten an andere Personen, Stellen oder Unternehmen stattfindet,
@@ -167,7 +167,7 @@
             in dem Drittland mittels eines Angemessenheitsbeschlusses anerkannt wurde (Art. 45
             DSGVO), dient dieser als Grundlage des Datentransfers. Im Übrigen erfolgen
             Datentransfers nur dann, wenn das Datenschutzniveau anderweitig gesichert ist,
-            insbesondere durch Standardvertragsklauseln (Art. 46 Abs. 2 lit. c) DSGVO),
+            insbesondere durch Standardvertragsklauseln (Art. 46 Abs. 2 lit. c) DSGVO,
             ausdrückliche Einwilligung oder im Fall vertraglicher oder gesetzlich erforderlicher
             Übermittlung (Art. 49 Abs. 1 DSGVO). Im Übrigen teilen wir Ihnen die Grundlagen der
             Drittlandübermittlung bei den einzelnen Anbietern aus dem Drittland mit, wobei die
@@ -246,7 +246,7 @@
                 <li>
                   6 Jahre - Übrige Geschäftsunterlagen: empfangene Handels- oder Geschäftsbriefe,
                   Wiedergaben der abgesandten Handels- oder Geschäftsbriefe, sonstige Unterlagen,
-                  soweit sie für die Besteuerung von Bedeutung sind, z. B. Stundenlohnzettel,
+                  soweit sie für die Besteuerung von Bedeutung sind, z.B. Stundenlohnzettel,
                   Betriebsabrechnungsbögen, Kalkulationsunterlagen, Preisauszeichnungen, aber auch
                   Lohnabrechnungsunterlagen, soweit sie nicht bereits Buchungsbelege sind und
                   Kassenstreifen (§ 147 Abs. 3 i. V. m. Abs. 1 Nr. 2, 3, 5 AO, § 257 Abs. 1 Nr. 2 u.
@@ -332,11 +332,11 @@
               Verweildauer, Klickpfade, Nutzungsintensität und -frequenz, verwendete Gerätetypen und
               Betriebssysteme, Interaktionen mit Inhalten und Funktionen); Meta-, Kommunikations-
               und Verfahrensdaten (z. B. IP-Adressen, Zeitangaben, Identifikationsnummern,
-              beteiligte Personen). Protokolldaten (z. B. Logfiles betreffend Logins oder den Abruf
+              beteiligte Personen). Protokolldaten (z.B. Logfiles betreffend Logins oder den Abruf
               von Daten oder Zugriffszeiten.).
             </li>
             <li>
-              <strong>Betroffene Personen:</strong> Nutzer (z. B. Webseitenbesucher, Nutzer von
+              <strong>Betroffene Personen:</strong> Nutzer (z.B. Webseitenbesucher, Nutzer von
               Onlinediensten).
             </li>
             <li>
@@ -351,7 +351,7 @@
             </li>
             <li class="">
               <strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f)
-              DSGVO).
+              DSGVO.
             </li>
           </ul>
           <p>
@@ -371,7 +371,7 @@
               Auslastung der Server und ihre Stabilität sicherzustellen;
               <span class=""
                 ><strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit.
-                f) DSGVO). </span
+                f) DSGVO. </span
               ><strong>Löschung von Daten:</strong> Logfile-Informationen werden für die Dauer von
               maximal 30 Tagen gespeichert und danach gelöscht oder anonymisiert. Daten, deren
               weitere Aufbewahrung zu Beweiszwecken erforderlich ist, sind bis zur endgültigen
@@ -389,7 +389,7 @@
             der Besucherströme.
           </p>
           <p>
-            <strong>Hinweise zur Einwilligung: </strong>Wir setzen Cookies im Einklang mit den
+            <strong>Hinweise zur Einwilligung:</strong>Wir setzen Cookies im Einklang mit den
             gesetzlichen Vorschriften ein. Daher holen wir von den Nutzern eine vorhergehende
             Einwilligung ein, es sei denn, sie ist laut Gesetzeslage nicht gefordert. Eine Erlaubnis
             ist insbesondere nicht notwendig, wenn das Speichern und das Auslesen der Informationen,
@@ -399,12 +399,12 @@
             enthält die Informationen zur jeweiligen Cookie-Nutzung.
           </p>
           <p>
-            <strong>Hinweise zu datenschutzrechtlichen Rechtsgrundlagen: </strong>Auf welcher
+            <strong>Hinweise zu datenschutzrechtlichen Rechtsgrundlagen:</strong>Auf welcher
             datenschutzrechtlichen Grundlage wir die personenbezogenen Daten der Nutzer mithilfe von
             Cookies verarbeiten, hängt davon ab, ob wir sie um eine Einwilligung bitten. Falls die
             Nutzer akzeptieren, ist die Rechtsgrundlage der Verwertung ihrer Daten die erklärte
             Einwilligung. Andernfalls werden die mithilfe von Cookies verwerteten Daten auf
-            Grundlage unserer berechtigten Interessen (z. B. an einem betriebswirtschaftlichen
+            Grundlage unserer berechtigten Interessen (z.B. an einem betriebswirtschaftlichen
             Betrieb unseres Onlineangebots und der Verbesserung seiner Nutzbarkeit) verarbeitet
             oder, falls dies im Rahmen der Erfüllung unserer vertraglichen Pflichten erfolgt, wenn
             der Einsatz von Cookies erforderlich ist, um unseren vertraglichen Verpflichtungen
@@ -413,14 +413,14 @@
             Verarbeitungsprozessen auf.
           </p>
           <p>
-            <strong>Speicherdauer: </strong>Im Hinblick auf die Speicherdauer werden die folgenden
+            <strong>Speicherdauer:</strong>Im Hinblick auf die Speicherdauer werden die folgenden
             Arten von Cookies unterschieden:
           </p>
           <ul>
             <li>
               <strong>Temporäre Cookies (auch: Session- oder Sitzungscookies):</strong> Temporäre
               Cookies werden spätestens gelöscht, nachdem ein Nutzer ein Onlineangebot verlassen und
-              sein Endgerät (z. B. Browser oder mobile Applikation) geschlossen hat.
+              sein Endgerät (z.B. Browser oder mobile Applikation) geschlossen hat.
             </li>
             <li>
               <strong>Permanente Cookies:</strong> Permanente Cookies bleiben auch nach dem
@@ -428,13 +428,13 @@
               gespeichert und bevorzugte Inhalte direkt angezeigt werden, wenn der Nutzer eine
               Website erneut besucht. Ebenso können die mithilfe von Cookies erhobenen Nutzerdaten
               zur Reichweitenmessung Verwendung finden. Sofern wir Nutzern keine expliziten Angaben
-              zur Art und Speicherdauer von Cookies mitteilen (z. B. im Rahmen der Einholung der
+              zur Art und Speicherdauer von Cookies mitteilen (z.B. im Rahmen der Einholung der
               Einwilligung), sollten sie davon ausgehen, dass diese permanent sind und die
               Speicherdauer bis zu zwei Jahre betragen kann.
             </li>
           </ul>
           <p>
-            <strong>Allgemeine Hinweise zum Widerruf und Widerspruch (Opt-out): </strong>Nutzer
+            <strong>Allgemeine Hinweise zum Widerruf und Widerspruch (Opt-out):</strong>Nutzer
             können die von ihnen abgegebenen Einwilligungen jederzeit widerrufen und zudem einen
             Widerspruch gegen die Verarbeitung entsprechend den gesetzlichen Vorgaben, auch mittels
             der Privatsphäre-Einstellungen ihres Browsers, erklären.
@@ -450,7 +450,7 @@
             </li>
             <li class="">
               <strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f)
-              DSGVO). Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO).
+              DSGVO). Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO.
             </li>
           </ul>
           <p>
@@ -479,26 +479,26 @@
               vorliegen, gelten folgende allgemeine Hinweise: Die Dauer der Speicherung der
               Einwilligung beträgt bis zu zwei Jahre. Dabei wird ein pseudonymer
               Nutzer-Identifikator erstellt, der zusammen mit dem Zeitpunkt der Einwilligung, den
-              Angaben zum Umfang der Einwilligung (z. B. betreffende Kategorien von Cookies und/oder
+              Angaben zum Umfang der Einwilligung (z.B. betreffende Kategorien von Cookies und/oder
               Diensteanbieter) sowie Informationen über den Browser, das System und das verwendete
               Endgerät gespeichert wird;
               <span class=""
                 ><strong>Rechtsgrundlagen:</strong> Einwilligung (Art. 6 Abs. 1 S. 1 lit. a)
-                DSGVO).</span
+                DSGVO.</span
               >
             </li>
           </ul>
           <h2 id="m182">Kontakt- und Anfrageverwaltung</h2>
           <p>
-            Bei der Kontaktaufnahme mit uns (z. B. per Post, Kontaktformular, E-Mail, Telefon oder
+            Bei der Kontaktaufnahme mit uns (z.B. per Post, Kontaktformular, E-Mail, Telefon oder
             via soziale Medien) sowie im Rahmen bestehender Nutzer- und Geschäftsbeziehungen werden
             die Angaben der anfragenden Personen verarbeitet, soweit dies zur Beantwortung der
             Kontaktanfragen und etwaiger angefragter Maßnahmen erforderlich ist.
           </p>
           <ul class="m-elements">
             <li>
-              <strong>Verarbeitete Datenarten:</strong> Bestandsdaten (z. B. der vollständige Name,
-              Wohnadresse, Kontaktinformationen, Kundennummer, etc.); Kontaktdaten (z. B. Post- und
+              <strong>Verarbeitete Datenarten:</strong> Bestandsdaten (z.B. der vollständige Name,
+              Wohnadresse, Kontaktinformationen, Kundennummer, etc.); Kontaktdaten (z.B. Post- und
               E-Mail-Adressen oder Telefonnummern); Inhaltsdaten (z. B. textliche oder bildliche
               Nachrichten und Beiträge sowie die sie betreffenden Informationen, wie z. B. Angaben
               zur Autorenschaft oder Zeitpunkt der Erstellung); Nutzungsdaten (z. B. Seitenaufrufe
@@ -510,7 +510,7 @@
             <li><strong>Betroffene Personen:</strong> Kommunikationspartner.</li>
             <li>
               <strong>Zwecke der Verarbeitung:</strong> Kommunikation; Organisations- und
-              Verwaltungsverfahren; Feedback (z. B. Sammeln von Feedback via Online-Formular).
+              Verwaltungsverfahren; Feedback (z.B. Sammeln von Feedback via Online-Formular).
               Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit.
             </li>
             <li>
@@ -519,8 +519,8 @@
             </li>
             <li class="">
               <strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f)
-              DSGVO). Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b)
-              DSGVO).
+              DSGVO. Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b)
+              DSGVO.
             </li>
           </ul>
           <p>
@@ -537,8 +537,8 @@
               Kontaktaufnahme und Kommunikation;
               <span class=""
                 ><strong>Rechtsgrundlagen:</strong> Vertragserfüllung und vorvertragliche Anfragen
-                (Art. 6 Abs. 1 S. 1 lit. b) DSGVO), Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit.
-                f) DSGVO).</span
+                (Art. 6 Abs. 1 S. 1 lit. b) DSGVO, Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit.
+                f) DSGVO.</span
               >
             </li>
           </ul>
