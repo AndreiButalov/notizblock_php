@@ -10,42 +10,83 @@
         + Notiz hinzufügen
       </router-link>
 
+      <!-- Notizen Liste -->
       <div class="flex-1 overflow-y-auto pr-2">
         <div class="grid grid-cols-2 gap-5">
-          <div
-            v-for="n in 20"
-            :key="n"
-            class="flex h-64 flex-col rounded-xl border border-gray-300 hover:bg-[#f7f5f3] bg-white p-4 shadow"
-          >
-            <h2 class="mb-3 truncate text-xl font-bold">Titel der Notiz {{ n }}</h2>
 
-            <div class="mb-3 flex-1 overflow-y-auto wrap-break-word text-sm leading-6 text-gray-700">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, eaque. Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Voluptates quidem cupiditate
-              reprehenderit inventore accusantium molestiae doloremque, illum excepturi recusandae
-              quia. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <div
+            v-for="note in notes"
+            :key="note.id"
+            class="flex h-64 flex-col rounded-xl border border-gray-300 bg-white p-4 shadow hover:bg-[#f7f5f3]"
+          >
+
+            <!-- Titel -->
+            <h2 class="mb-3 truncate text-xl font-bold">
+              {{ note.title }}
+            </h2>
+            
+
+            <!-- Inhalt -->
+            <div
+              class="mb-3 flex-1 overflow-y-auto wrap-break-word text-sm leading-6 text-gray-700"
+            >
+              {{ note.content }}
             </div>
 
-            <p class="mb-4 text-xs text-gray-500">26.07.2026</p>
 
+            <!-- Datum -->
+            <p class="mb-4 text-xs text-gray-500">
+              {{ formatDate(note.createdAt) }}
+            </p>
+
+
+            <!-- Buttons -->
             <div class="mt-auto flex justify-between gap-2">
-              <button
-                class="btn"
-              >
+              <button class="btn">
                 Bearbeiten
               </button>
 
-              <button
-                class="btn"
-              >
+              <button class="btn">
                 Löschen
               </button>
             </div>
+
           </div>
+
         </div>
       </div>
+
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref, onMounted } from "vue";
+import api from "@/services/api";
+
+const notes = ref([]);
+
+
+const getNotes = async () => {
+  try {
+    const response = await api.get("/notes");
+    console.log(JSON.stringify(response.data, null, 2));
+    notes.value = response.data;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+
+// Datum formatieren
+const formatDate = (date) => {
+  if (!date) return "";
+
+  return new Date(date).toLocaleDateString("de-DE");
+};
+
+
+onMounted(() => {
+  getNotes();
+});
+</script>
