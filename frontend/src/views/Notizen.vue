@@ -1,6 +1,6 @@
 <template>
-  <div class="flex min-h-screen items-center justify-center">
-    <div class="flex h-192 w-152 flex-col rounded-xl bg-[#FAEBD7] p-8">
+  <div class="flex h-screen items-center justify-center">
+    <div class="flex h-[80%] w-152 flex-col rounded-xl bg-[#FAEBD7] p-8">
       <h1 class="mb-4 text-2xl font-bold">Notizen:</h1>
 
       <router-link
