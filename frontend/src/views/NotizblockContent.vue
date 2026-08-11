@@ -1,12 +1,12 @@
 <template>
   <div class="flex min-h-screen items-center justify-center">
-    <div class="w-100 h-93 rounded-xl bg-[#FAEBD7] p-8 flex flex-col overflow-hidden">
-      <div class="flex justify-between">
+    <div class="add-note-shell w-100 h-93 rounded-xl bg-[#FAEBD7] p-8 flex flex-col overflow-hidden">
+      <div class="add-note-header flex justify-between">
         <h1 class="btn">Notizen Hinzufügen</h1>
         <p class="btn">Papierkorb</p>
       </div>
 
-      <form class="flex flex-col flex-1 gap-2 mt-4" @submit.prevent="submitNote">
+      <form class="add-note-form flex flex-col flex-1 gap-2 mt-4" @submit.prevent="submitNote">
         <input
           v-model="form.title"
           type="text"
@@ -76,5 +76,36 @@ const submitNote = async () => {
   }
 };
 </script>
+
+<style scoped>
+@media (max-width: 768px) {
+  .add-note-shell {
+    width: 95%;
+    height: auto;
+    max-height: 90vh;
+    padding: 1rem;
+  }
+
+  .add-note-header {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .add-note-form {
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .add-note-shell {
+    padding: 0.75rem;
+  }
+
+  .add-note-header .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+</style>
 
 

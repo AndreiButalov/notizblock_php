@@ -1,9 +1,9 @@
 <template>
   <div class="flex min-h-screen items-center justify-center">
-    <div class="w-100 h-93 rounded-xl bg-[#FAEBD7] p-8 flex flex-col overflow-hidden">
+    <div class="edit-shell w-100 h-93 rounded-xl bg-[#FAEBD7] p-8 flex flex-col overflow-hidden">
       <h1 class="mb-6 text-2xl font-bold">Notiz bearbeiten</h1>
 
-      <form class="flex flex-col gap-4" @submit.prevent="saveNote">
+      <form class="edit-form flex flex-col gap-4" @submit.prevent="saveNote">
         <div>
           <label class="block mb-2 font-semibold" for="title">Titel</label>
           <input
@@ -25,7 +25,7 @@
           ></textarea>
         </div>
 
-        <div class="flex items-center justify-between gap-3">
+        <div class="edit-actions flex items-center justify-between gap-3">
           <button
             type="submit"
             class="btn rounded bg-amber-300 px-4 py-2 font-semibold hover:bg-amber-400"
@@ -109,3 +109,37 @@ const cancel = () => {
 
 onMounted(loadNote)
 </script>
+
+<style scoped>
+@media (max-width: 768px) {
+  .edit-shell {
+    width: 95%;
+    height: auto;
+    max-height: 90vh;
+    padding: 1rem;
+  }
+
+  .edit-form {
+    gap: 1rem;
+  }
+
+  .edit-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .edit-actions button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .edit-shell {
+    padding: 0.75rem;
+  }
+
+  .edit-shell h1 {
+    font-size: 1.25rem;
+  }
+}
+</style>

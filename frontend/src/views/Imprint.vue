@@ -1,11 +1,11 @@
 <template>
   <div class="flex min-h-screen items-center justify-center px-4 py-10">
-    <div div class="w-200 h-193 rounded-xl bg-[#FAEBD7] p-8 flex flex-col overflow-hidden">
+    <div class="imprint-shell w-200 h-193 rounded-xl bg-[#FAEBD7] p-8 flex flex-col overflow-hidden">
       <div class="mb-6 flex items-center justify-center">
         <h1 class="text-3xl font-bold">Legal Notice</h1>
       </div>
 
-      <div class="overflow-y-auto pr-4">
+      <div class="imprint-content overflow-y-auto pr-4">
         <h2 class="mb-3 mt-6 text-2xl font-bold">Imprint</h2>
 
         <ul class="mb-6 list-disc space-y-1 pl-6 text-base">
@@ -53,3 +53,28 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+@media (max-width: 768px) {
+  .imprint-shell {
+    width: 95%;
+    height: auto;
+    max-height: 90vh;
+    padding: 1rem;
+  }
+
+  .imprint-content {
+    padding-right: 0.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .imprint-shell {
+    padding: 0.75rem;
+  }
+
+  .imprint-content h2 {
+    font-size: 1.25rem;
+  }
+}
+</style>

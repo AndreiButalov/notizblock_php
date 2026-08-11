@@ -1,6 +1,6 @@
 <template>
   <div class="flex h-screen items-center justify-center">
-    <div class="flex h-[80%] w-152 flex-col rounded-xl bg-[#FAEBD7] p-8">
+    <div class="note-shell flex h-[80%] w-152 flex-col rounded-xl bg-[#FAEBD7] p-8">
       <h1 class="mb-4 text-2xl font-bold">Notizen:</h1>
 
       <router-link
@@ -11,11 +11,11 @@
       </router-link>
 
       <div class="flex-1 overflow-y-auto pr-2">
-        <div class="grid grid-cols-2 gap-5">
+        <div class="note-grid grid grid-cols-2 gap-5">
           <div
             v-for="note in notes"
             :key="note.id"
-            class="flex h-64 flex-col rounded-xl border border-gray-300 bg-white p-4 shadow hover:bg-[#f7f5f3]"
+            class="note-card flex h-64 flex-col rounded-xl border border-gray-300 bg-white p-4 shadow hover:bg-[#f7f5f3]"
           >
             <h2 class="mb-3 truncate text-xl font-bold">
               {{ note.title }}
@@ -31,7 +31,7 @@
               {{ formatDate(note.createdAt) }}
             </p>
 
-            <div class="mt-auto flex justify-between gap-2">
+            <div class="note-actions mt-auto flex justify-between gap-2">
               <router-link class="btn" :to="`/editNotizen/${note.id}`"> Bearbeiten </router-link>
 
               <button class="btn" @click="deleteNote(note.id)">Löschen</button>
@@ -71,3 +71,39 @@ onMounted(() => {
   getNotes()
 })
 </script>
+
+<style scoped>
+@media (max-width: 768px) {
+  .note-shell {
+    width: 95%;
+    height: 90%;
+    padding: 1rem;
+  }
+
+  .note-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .note-card {
+    height: auto;
+    min-height: 14rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .note-shell {
+    padding: 0.75rem;
+  }
+
+  .note-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .note-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+</style>

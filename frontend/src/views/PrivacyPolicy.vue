@@ -1,12 +1,12 @@
 <template>
   <div class="flex min-h-screen items-center justify-center">
-    <div class="w-200 h-193 rounded-xl bg-[#FAEBD7] p-8 flex flex-col overflow-hidden">
+    <div class="policy-shell w-200 h-193 rounded-xl bg-[#FAEBD7] p-8 flex flex-col overflow-hidden">
       <div class="flex justify-center">
         <h1 class="text-3xl font-bold">Privacy Policy</h1>
       </div>
 
       <div class="mt-6 flex justify-center overflow-y-auto">
-        <div class="w-full max-w-4xl prose prose-lg">
+        <div class="policy-content w-full max-w-4xl prose prose-lg">
           <p class="text-base">Stand: 25. Juli 2026</p>
 
           <h2 class="mb-0 text-2xl font-bold">Inhaltsübersicht</h2>
@@ -556,5 +556,33 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+@media (max-width: 768px) {
+  .policy-shell {
+    width: 95%;
+    height: auto;
+    max-height: 90vh;
+    padding: 1rem;
+  }
+
+  .policy-content {
+    font-size: 0.95rem;
+    padding-right: 0.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .policy-shell {
+    padding: 0.75rem;
+  }
+
+  .policy-content :deep(h1),
+  .policy-content :deep(h2),
+  .policy-content :deep(h3) {
+    font-size: 1.1rem;
+  }
+}
+</style>
 
 <script setup></script>
