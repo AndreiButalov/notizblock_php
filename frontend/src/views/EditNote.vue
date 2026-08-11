@@ -1,11 +1,24 @@
 <template>
-  <div class="flex min-h-screen items-center justify-center">
-    <div class="edit-shell w-100 h-93 rounded-xl bg-[#FAEBD7] p-8 flex flex-col overflow-hidden">
-      <h1 class="mb-6 text-2xl font-bold">Notiz bearbeiten</h1>
+  <div class="flex min-h-screen items-center justify-center p-4">
+    <div
+      class="edit-shell flex h-auto max-h-[90vh] w-full max-w-2xl flex-col overflow-hidden rounded-xl bg-[#FAEBD7] p-4 sm:p-6 md:p-8"
+    >
+      <h1 class="mb-6 text-xl font-bold sm:text-2xl">
+        Notiz bearbeiten
+      </h1>
 
-      <form class="edit-form flex flex-col gap-4" @submit.prevent="saveNote">
+      <form
+        class="edit-form flex flex-col gap-4"
+        @submit.prevent="saveNote"
+      >
         <div>
-          <label class="block mb-2 font-semibold" for="title">Titel</label>
+          <label
+            class="mb-2 block font-semibold"
+            for="title"
+          >
+            Titel
+          </label>
+
           <input
             id="title"
             v-model="title"
@@ -16,36 +29,47 @@
         </div>
 
         <div>
-          <label class="block mb-2 font-semibold" for="content">Inhalt</label>
+          <label
+            class="mb-2 block font-semibold"
+            for="content"
+          >
+            Inhalt
+          </label>
+
           <textarea
             id="content"
             v-model="content"
-            class="w-full min-h-40` resize-none  rounded border border-gray-300 bg-white px-3 py-2"
+            class="min-h-40 w-full resize-none rounded border border-gray-300 bg-white px-3 py-2"
             placeholder="Notizinhalt eingeben"
           ></textarea>
         </div>
 
-        <div class="edit-actions flex items-center justify-between gap-3">
+        <div
+          class="edit-actions flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"
+        >
           <button
             type="submit"
-            class="btn rounded bg-amber-300 px-4 py-2 font-semibold hover:bg-amber-400"
-            @click="saveNote"
+            class="w-full rounded bg-amber-300 px-4 py-2 font-semibold hover:bg-amber-400 sm:w-auto"
           >
             Speichern
           </button>
+
           <button
             type="button"
-            class="btn rounded bg-gray-300 px-4 py-2 font-semibold hover:bg-gray-400"
+            class="w-full rounded bg-gray-300 px-4 py-2 font-semibold hover:bg-gray-400 sm:w-auto"
             @click="cancel"
           >
             Abbrechen
           </button>
         </div>
 
-        <p v-if="error" class="text-sm text-red-600">{{ error }}</p>
+        <p
+          v-if="error"
+          class="text-sm text-red-600"
+        >
+          {{ error }}
+        </p>
       </form>
-
-      
     </div>
   </div>
 </template>
@@ -96,6 +120,7 @@ const saveNote = async () => {
       title: title.value,
       content: content.value,
     })
+
     router.push({ name: 'notizen' })
   } catch (err) {
     error.value = 'Beim Speichern ist ein Fehler aufgetreten.'
@@ -109,37 +134,3 @@ const cancel = () => {
 
 onMounted(loadNote)
 </script>
-
-<style scoped>
-@media (max-width: 768px) {
-  .edit-shell {
-    width: 95%;
-    height: auto;
-    max-height: 90vh;
-    padding: 1rem;
-  }
-
-  .edit-form {
-    gap: 1rem;
-  }
-
-  .edit-actions {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .edit-actions button {
-    width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .edit-shell {
-    padding: 0.75rem;
-  }
-
-  .edit-shell h1 {
-    font-size: 1.25rem;
-  }
-}
-</style>
