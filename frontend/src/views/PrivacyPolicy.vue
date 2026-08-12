@@ -12,8 +12,8 @@
           <p class="text-base font-bold text-center">Stand: 25. Juli 2026</p>
 
           <h2 class="mt-5 text-2xl font-bold mb-5">Inhaltsübersicht:</h2>
-          <ul class="index">
-            <li><a class="index-link" href="#m3">- Verantwortlicher</a></li>
+          <ul class="index font-semibold">
+            <li><a class="index-link " href="#m3">- Verantwortlicher</a></li>
             <li><a class="index-link" href="#mOverview">- Übersicht der Verarbeitungen</a></li>
             <li><a class="index-link" href="#m2427">- Maßgebliche Rechtsgrundlagen</a></li>
             <li><a class="index-link" href="#m27">- Sicherheitsmaßnahmen</a></li>
@@ -73,7 +73,7 @@
             <li>Informationstechnische Infrastruktur.</li>
           </ul>
           <h2 id="m2427" class="text-xl font-bold sm:text-2xl mb-10 mt-10">Maßgebliche Rechtsgrundlagen</h2>
-          <p>
+          <p class="mb-5">
             <strong>Maßgebliche Rechtsgrundlagen nach der DSGVO: </strong>Im Folgenden erhalten Sie
             eine Übersicht der Rechtsgrundlagen der DSGVO, auf deren Basis wir personenbezogene
             Daten verarbeiten. Bitte nehmen Sie zur Kenntnis, dass neben den Regelungen der DSGVO
@@ -82,13 +82,13 @@
             Ihnen diese in der Datenschutzerklärung mit.
           </p>
           <ul>
-            <li>
+            <li class="mb-5">
               <strong>Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO</strong> - Die betroffene
               Person hat ihre Einwilligung in die Verarbeitung der sie betreffenden
               personenbezogenen Daten für einen spezifischen Zweck oder mehrere bestimmte Zwecke
               gegeben.
             </li>
-            <li>
+            <li class="mb-5">
               <strong
                 >Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b)
                 DSGVO</strong
@@ -97,7 +97,7 @@
               betroffene Person ist, oder zur Durchführung vorvertraglicher Maßnahmen erforderlich,
               die auf Anfrage der betroffenen Person erfolgen.
             </li>
-            <li>
+            <li class="mb-5">
               <strong>Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO</strong> - die
               Verarbeitung ist zur Wahrung der berechtigten Interessen des Verantwortlichen oder
               eines Dritten notwendig, vorausgesetzt, dass die Interessen, Grundrechte und
@@ -105,7 +105,7 @@
               verlangen, nicht überwiegen.
             </li>
           </ul>
-          <p>
+          <p class="mb-5">
             <strong>Nationale Datenschutzregelungen in Deutschland: </strong>Zusätzlich zu den
             Datenschutzregelungen der DSGVO gelten nationale Regelungen zum Datenschutz in
             Deutschland. Hierzu gehört insbesondere das Gesetz zum Schutz vor Missbrauch
@@ -200,7 +200,7 @@
           </p>
 
           <h2 id="m12" class="text-xl font-bold sm:text-2xl mb-5 mt-10">Allgemeine Informationen zur Datenspeicherung und Löschung</h2>
-          <p>
+          <p class="mb-5">
             Wir löschen personenbezogene Daten, die wir verarbeiten, gemäß den gesetzlichen
             Bestimmungen, sobald die zugrundeliegenden Einwilligungen widerrufen werden oder keine
             weiteren rechtlichen Grundlagen für die Verarbeitung bestehen. Dies betrifft Fälle, in
@@ -208,33 +208,33 @@
             werden. Ausnahmen von dieser Regelung bestehen, wenn gesetzliche Pflichten oder
             besondere Interessen eine längere Aufbewahrung oder Archivierung der Daten erfordern.
           </p>
-          <p>
+          <p class="mb-5">
             Insbesondere müssen Daten, die aus handels- oder steuerrechtlichen Gründen aufbewahrt
             werden müssen oder deren Speicherung notwendig ist zur Rechtsverfolgung oder zum Schutz
             der Rechte anderer natürlicher oder juristischer Personen, entsprechend archiviert
             werden.
           </p>
-          <p>
+          <p class="mb-5">
             Unsere Datenschutzhinweise enthalten zusätzliche Informationen zur Aufbewahrung und
             Löschung von Daten, die speziell für bestimmte Verarbeitungsprozesse gelten.
           </p>
-          <p>
+          <p class="mb-5">
             Bei mehreren Angaben zur Aufbewahrungsdauer oder Löschungsfristen eines Datums, ist
             stets die längste Frist maßgeblich.
           </p>
-          <p>
+          <p class="mb-5">
             Beginnt eine Frist nicht ausdrücklich zu einem bestimmten Datum und beträgt sie
             mindestens ein Jahr, so startet sie automatisch am Ende des Kalenderjahres, in dem das
             fristauslösende Ereignis eingetreten ist. Im Fall laufender Vertragsverhältnisse, in
             deren Rahmen Daten gespeichert werden, ist das fristauslösende Ereignis der Zeitpunkt
             des Wirksamwerdens der Kündigung oder sonstige Beendigung des Rechtsverhältnisses.
           </p>
-          <p>
+          <p class="mb-5">
             Daten, die nicht mehr für den ursprünglich vorgesehenen Zweck, sondern aufgrund
             gesetzlicher Vorgaben oder anderer Gründe aufbewahrt werden, verarbeiten wir
             ausschließlich zu den Gründen, die ihre Aufbewahrung rechtfertigen.
           </p>
-          <p>
+          <p class="mb-5">
             <strong>Weitere Hinweise zu Verarbeitungsprozessen, Verfahren und Diensten:</strong>
           </p>
           <ul class="m-elements">
@@ -242,14 +242,14 @@
               <strong>Aufbewahrung und Löschung von Daten: </strong>Die folgenden allgemeinen
               Fristen gelten für die Aufbewahrung und Archivierung nach deutschem Recht:
               <ul>
-                <li>
+                <li class="mb-5 mt-5">
                   10 Jahre - Aufbewahrungsfrist für Bücher und Aufzeichnungen, Jahresabschlüsse,
                   Inventare, Lageberichte, Eröffnungsbilanz sowie die zu ihrem Verständnis
                   erforderlichen Arbeitsanweisungen und sonstigen Organisationsunterlagen,
                   Buchungsbelege und Rechnungen (§ 147 Abs. 3 i. V. m. Abs. 1 Nr. 1, 4 und 4a AO, §
                   14b Abs. 1 UStG, § 257 Abs. 1 Nr. 1 u. 4, Abs. 4 HGB).
                 </li>
-                <li>
+                <li class="mb-5">
                   6 Jahre - Übrige Geschäftsunterlagen: empfangene Handels- oder Geschäftsbriefe,
                   Wiedergaben der abgesandten Handels- oder Geschäftsbriefe, sonstige Unterlagen,
                   soweit sie für die Besteuerung von Bedeutung sind, z.B. Stundenlohnzettel,
@@ -258,7 +258,7 @@
                   Kassenstreifen (§ 147 Abs. 3 i. V. m. Abs. 1 Nr. 2, 3, 5 AO, § 257 Abs. 1 Nr. 2 u.
                   3, Abs. 4 HGB).
                 </li>
-                <li>
+                <li class="mb-5">
                   3 Jahre - Daten, die erforderlich sind, um potenzielle Gewährleistungs- und
                   Schadensersatzansprüche oder ähnliche vertragliche Ansprüche und Rechte zu
                   berücksichtigen sowie damit verbundene Anfragen zu bearbeiten, basierend auf
@@ -270,7 +270,7 @@
             </li>
           </ul>
           <h2 id="m10" class="text-xl font-bold sm:text-2xl mb-5 mt-10">Rechte der betroffenen Personen</h2>
-          <p>
+          <p class="mb-5">
             Rechte der betroffenen Personen aus der DSGVO: Ihnen stehen als Betroffene nach der
             DSGVO verschiedene Rechte zu, die sich insbesondere aus Art. 15 bis 21 DSGVO ergeben:
           </p>
@@ -288,34 +288,34 @@
                 Direktwerbung in Verbindung steht.</strong
               >
             </li>
-            <li>
+            <li class="mt-5 mb-5">
               <strong>Widerrufsrecht bei Einwilligungen:</strong> Sie haben das Recht, erteilte
               Einwilligungen jederzeit zu widerrufen.
             </li>
-            <li>
+            <li class="mb-5">
               <strong>Auskunftsrecht:</strong> Sie haben das Recht, eine Bestätigung darüber zu
               verlangen, ob betreffende Daten verarbeitet werden und auf Auskunft über diese Daten
               sowie auf weitere Informationen und Kopie der Daten entsprechend den gesetzlichen
               Vorgaben.
             </li>
-            <li>
+            <li class="mb-5">
               <strong>Recht auf Berichtigung:</strong> Sie haben entsprechend den gesetzlichen
               Vorgaben das Recht, die Vervollständigung der Sie betreffenden Daten oder die
               Berichtigung der Sie betreffenden unrichtigen Daten zu verlangen.
             </li>
-            <li>
+            <li class="mb-5">
               <strong>Recht auf Löschung und Einschränkung der Verarbeitung:</strong> Sie haben nach
               Maßgabe der gesetzlichen Vorgaben das Recht, zu verlangen, dass Sie betreffende Daten
               unverzüglich gelöscht werden, bzw. alternativ nach Maßgabe der gesetzlichen Vorgaben
               eine Einschränkung der Verarbeitung der Daten zu verlangen.
             </li>
-            <li>
+            <li class="mb-5">
               <strong>Recht auf Datenübertragbarkeit:</strong> Sie haben das Recht, Sie betreffende
               Daten, die Sie uns bereitgestellt haben, nach Maßgabe der gesetzlichen Vorgaben in
               einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten oder deren
               Übermittlung an einen anderen Verantwortlichen zu fordern.
             </li>
-            <li>
+            <li class="mb-5">
               <strong>Beschwerde bei Aufsichtsbehörde:</strong> Sie haben unbeschadet eines
               anderweitigen verwaltungsrechtlichen oder gerichtlichen Rechtsbehelfs das Recht auf
               Beschwerde bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres
@@ -326,14 +326,14 @@
           </ul>
 
           <h2 id="m225" class="text-xl font-bold sm:text-2xl mb-5 mt-10">Bereitstellung des Onlineangebots und Webhosting</h2>
-          <p>
+          <p class="mb-5">
             Wir verarbeiten die Daten der Nutzer, um ihnen unsere Online-Dienste zur Verfügung
             stellen zu können. Zu diesem Zweck verarbeiten wir die IP-Adresse des Nutzers, die
             notwendig ist, um die Inhalte und Funktionen unserer Online-Dienste an den Browser oder
             das Endgerät der Nutzer zu übermitteln.
           </p>
           <ul class="m-elements">
-            <li>
+            <li class="mb-5">
               <strong>Verarbeitete Datenarten:</strong> Nutzungsdaten (z. B. Seitenaufrufe und
               Verweildauer, Klickpfade, Nutzungsintensität und -frequenz, verwendete Gerätetypen und
               Betriebssysteme, Interaktionen mit Inhalten und Funktionen); Meta-, Kommunikations-
@@ -341,30 +341,30 @@
               beteiligte Personen). Protokolldaten (z.B. Logfiles betreffend Logins oder den Abruf
               von Daten oder Zugriffszeiten.).
             </li>
-            <li>
+            <li class="mb-5">
               <strong>Betroffene Personen:</strong> Nutzer (z.B. Webseitenbesucher, Nutzer von
               Onlinediensten).
             </li>
-            <li>
+            <li class="mb-5">
               <strong>Zwecke der Verarbeitung:</strong> Bereitstellung unseres Onlineangebotes und
               Nutzerfreundlichkeit; Informationstechnische Infrastruktur (Betrieb und Bereitstellung
               von Informationssystemen und technischen Geräten (Computer, Server etc.).).
               Sicherheitsmaßnahmen.
             </li>
-            <li>
+            <li class="mb-5">
               <strong>Aufbewahrung und Löschung:</strong> Löschung entsprechend Angaben im Abschnitt
               "Allgemeine Informationen zur Datenspeicherung und Löschung".
             </li>
-            <li class="">
+            <li class="mb-5">
               <strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f)
               DSGVO.
             </li>
           </ul>
-          <p>
+          <p class="mb-5">
             <strong>Weitere Hinweise zu Verarbeitungsprozessen, Verfahren und Diensten:</strong>
           </p>
           <ul class="m-elements">
-            <li>
+            <li class="mb-5">
               <strong>Erhebung von Zugriffsdaten und Logfiles: </strong>Der Zugriff auf unser
               Onlineangebot wird in Form von sogenannten "Server-Logfiles" protokolliert. Zu den
               Serverlogfiles können die Adresse und der Name der abgerufenen Webseiten und Dateien,
@@ -385,7 +385,7 @@
             </li>
           </ul>
           <h2 id="m134" class="text-xl font-bold sm:text-2xl mb-5 mt-10">Einsatz von Cookies</h2>
-          <p>
+          <p class="mb-5">
             Cookies sind kleine Textdateien bzw. sonstige Speichervermerke, die Informationen auf
             Endgeräten speichern und aus ihnen auslesen. Zum Beispiel, um den Log-in-Status in einem
             Nutzerkonto, einen Warenkorbinhalt in einem E-Shop, die aufgerufenen Inhalte oder
@@ -394,7 +394,7 @@
             der Sicherheit und des Komforts von Onlineangeboten sowie der Erstellung von Analysen
             der Besucherströme.
           </p>
-          <p>
+          <p class="mb-5">
             <strong>Hinweise zur Einwilligung:</strong>Wir setzen Cookies im Einklang mit den
             gesetzlichen Vorschriften ein. Daher holen wir von den Nutzern eine vorhergehende
             Einwilligung ein, es sei denn, sie ist laut Gesetzeslage nicht gefordert. Eine Erlaubnis
@@ -404,7 +404,7 @@
             stellen. Die widerrufliche Einwilligung wird ihnen gegenüber deutlich kommuniziert und
             enthält die Informationen zur jeweiligen Cookie-Nutzung.
           </p>
-          <p>
+          <p class="mb-5">
             <strong>Hinweise zu datenschutzrechtlichen Rechtsgrundlagen:</strong>Auf welcher
             datenschutzrechtlichen Grundlage wir die personenbezogenen Daten der Nutzer mithilfe von
             Cookies verarbeiten, hängt davon ab, ob wir sie um eine Einwilligung bitten. Falls die
@@ -418,17 +418,17 @@
             wir im Laufe dieser Datenschutzerklärung oder im Rahmen von unseren Einwilligungs- und
             Verarbeitungsprozessen auf.
           </p>
-          <p>
+          <p class="mb-5">
             <strong>Speicherdauer:</strong>Im Hinblick auf die Speicherdauer werden die folgenden
             Arten von Cookies unterschieden:
           </p>
           <ul>
-            <li>
+            <li class="mb-5">
               <strong>Temporäre Cookies (auch: Session- oder Sitzungscookies):</strong> Temporäre
               Cookies werden spätestens gelöscht, nachdem ein Nutzer ein Onlineangebot verlassen und
               sein Endgerät (z.B. Browser oder mobile Applikation) geschlossen hat.
             </li>
-            <li>
+            <li class="mb-5">
               <strong>Permanente Cookies:</strong> Permanente Cookies bleiben auch nach dem
               Schließen des Endgeräts gespeichert. So können beispielsweise der Log-in-Status
               gespeichert und bevorzugte Inhalte direkt angezeigt werden, wenn der Nutzer eine
@@ -439,31 +439,31 @@
               Speicherdauer bis zu zwei Jahre betragen kann.
             </li>
           </ul>
-          <p>
+          <p class="mb-5">
             <strong>Allgemeine Hinweise zum Widerruf und Widerspruch (Opt-out):</strong>Nutzer
             können die von ihnen abgegebenen Einwilligungen jederzeit widerrufen und zudem einen
             Widerspruch gegen die Verarbeitung entsprechend den gesetzlichen Vorgaben, auch mittels
             der Privatsphäre-Einstellungen ihres Browsers, erklären.
           </p>
           <ul class="m-elements">
-            <li>
+            <li class="mb-5">
               <strong>Verarbeitete Datenarten:</strong> Meta-, Kommunikations- und Verfahrensdaten
               (z. B. IP-Adressen, Zeitangaben, Identifikationsnummern, beteiligte Personen).
             </li>
-            <li>
+            <li class="mb-5">
               <strong>Betroffene Personen:</strong> Nutzer (z. B. Webseitenbesucher, Nutzer von
               Onlinediensten).
             </li>
-            <li class="">
+            <li class="mb-5">
               <strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f)
               DSGVO. Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO.
             </li>
           </ul>
-          <p>
+          <p class="mb-5">
             <strong>Weitere Hinweise zu Verarbeitungsprozessen, Verfahren und Diensten:</strong>
           </p>
           <ul class="m-elements">
-            <li>
+            <li class="mb-5">
               <strong>Verarbeitung von Cookie-Daten auf Grundlage einer Einwilligung: </strong>Wir
               setzen eine Einwilligungs-Management-Lösung ein, bei der die Einwilligung der Nutzer
               zur Verwendung von Cookies oder zu den im Rahmen der Einwilligungs-Management-Lösung
@@ -495,14 +495,14 @@
             </li>
           </ul>
           <h2 id="m182" class="text-xl font-bold sm:text-2xl mb-5 mt-10">Kontakt- und Anfrageverwaltung</h2>
-          <p>
+          <p class="mb-5">
             Bei der Kontaktaufnahme mit uns (z.B. per Post, Kontaktformular, E-Mail, Telefon oder
             via soziale Medien) sowie im Rahmen bestehender Nutzer- und Geschäftsbeziehungen werden
             die Angaben der anfragenden Personen verarbeitet, soweit dies zur Beantwortung der
             Kontaktanfragen und etwaiger angefragter Maßnahmen erforderlich ist.
           </p>
           <ul class="m-elements">
-            <li>
+            <li class="mb-5">
               <strong>Verarbeitete Datenarten:</strong> Bestandsdaten (z.B. der vollständige Name,
               Wohnadresse, Kontaktinformationen, Kundennummer, etc.); Kontaktdaten (z.B. Post- und
               E-Mail-Adressen oder Telefonnummern); Inhaltsdaten (z. B. textliche oder bildliche
@@ -513,35 +513,38 @@
               Kommunikations- und Verfahrensdaten (z. B. IP-Adressen, Zeitangaben,
               Identifikationsnummern, beteiligte Personen).
             </li>
-            <li><strong>Betroffene Personen:</strong> Kommunikationspartner.</li>
-            <li>
+            <li class="mb-5"><strong>Betroffene Personen:</strong> Kommunikationspartner.</li>
+            <li class="mb-5">
               <strong>Zwecke der Verarbeitung:</strong> Kommunikation; Organisations- und
               Verwaltungsverfahren; Feedback (z.B. Sammeln von Feedback via Online-Formular).
               Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit.
             </li>
-            <li>
+            <li class="mb-5">
               <strong>Aufbewahrung und Löschung:</strong> Löschung entsprechend Angaben im Abschnitt
               "Allgemeine Informationen zur Datenspeicherung und Löschung".
             </li>
-            <li class="">
+            <li class="mb-5">
               <strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f)
               DSGVO. Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b)
               DSGVO.
             </li>
           </ul>
-          <p>
+          <p class="mb-5">
             <strong>Weitere Hinweise zu Verarbeitungsprozessen, Verfahren und Diensten:</strong>
           </p>
           <ul class="m-elements">
-            <li>
-              <strong>Kontaktformular: </strong>Bei Kontaktaufnahme über unser Kontaktformular, per
-              E-Mail oder anderen Kommunikationswegen, verarbeiten wir die uns übermittelten
-              personenbezogenen Daten zur Beantwortung und Bearbeitung des jeweiligen Anliegens.
-              Dies umfasst in der Regel Angaben wie Name, Kontaktinformationen und gegebenenfalls
-              weitere Informationen, die uns mitgeteilt werden und zur angemessenen Bearbeitung
-              erforderlich sind. Wir nutzen diese Daten ausschließlich für den angegebenen Zweck der
-              Kontaktaufnahme und Kommunikation;
-              <span class=""
+            <li class="mb-5">
+              <p class="mb-5">
+                <strong>Kontaktformular: </strong>Bei Kontaktaufnahme über unser Kontaktformular, per
+                E-Mail oder anderen Kommunikationswegen, verarbeiten wir die uns übermittelten
+                personenbezogenen Daten zur Beantwortung und Bearbeitung des jeweiligen Anliegens.
+                Dies umfasst in der Regel Angaben wie Name, Kontaktinformationen und gegebenenfalls
+                weitere Informationen, die uns mitgeteilt werden und zur angemessenen Bearbeitung
+                erforderlich sind. Wir nutzen diese Daten ausschließlich für den angegebenen Zweck der
+                Kontaktaufnahme und Kommunikation;
+              </p>
+              
+              <span class="mb-5"
                 ><strong>Rechtsgrundlagen:</strong> Vertragserfüllung und vorvertragliche Anfragen
                 (Art. 6 Abs. 1 S. 1 lit. b) DSGVO, Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit.
                 f) DSGVO.</span
