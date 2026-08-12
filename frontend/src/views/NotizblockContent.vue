@@ -9,10 +9,7 @@
         <h1 class="text-xl font-bold sm:text-2xl">
           Notizen Hinzufügen
         </h1>
-
-        <p class="text-center sm:text-left">
-          Papierkorb
-        </p>
+                
       </div>
 
       <form
