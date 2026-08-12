@@ -395,7 +395,7 @@
             der Besucherströme.
           </p>
           <p class="mb-5">
-            <strong>Hinweise zur Einwilligung:</strong>Wir setzen Cookies im Einklang mit den
+            <strong>Hinweise zur Einwilligung:</strong> Wir setzen Cookies im Einklang mit den
             gesetzlichen Vorschriften ein. Daher holen wir von den Nutzern eine vorhergehende
             Einwilligung ein, es sei denn, sie ist laut Gesetzeslage nicht gefordert. Eine Erlaubnis
             ist insbesondere nicht notwendig, wenn das Speichern und das Auslesen der Informationen,
@@ -405,7 +405,7 @@
             enthält die Informationen zur jeweiligen Cookie-Nutzung.
           </p>
           <p class="mb-5">
-            <strong>Hinweise zu datenschutzrechtlichen Rechtsgrundlagen:</strong>Auf welcher
+            <strong> Hinweise zu datenschutzrechtlichen Rechtsgrundlagen:</strong>Auf welcher
             datenschutzrechtlichen Grundlage wir die personenbezogenen Daten der Nutzer mithilfe von
             Cookies verarbeiten, hängt davon ab, ob wir sie um eine Einwilligung bitten. Falls die
             Nutzer akzeptieren, ist die Rechtsgrundlage der Verwertung ihrer Daten die erklärte
@@ -419,17 +419,17 @@
             Verarbeitungsprozessen auf.
           </p>
           <p class="mb-5">
-            <strong>Speicherdauer:</strong>Im Hinblick auf die Speicherdauer werden die folgenden
+            <strong>Speicherdauer:</strong> Im Hinblick auf die Speicherdauer werden die folgenden
             Arten von Cookies unterschieden:
           </p>
           <ul>
             <li class="mb-5">
-              <strong>Temporäre Cookies (auch: Session- oder Sitzungscookies):</strong> Temporäre
+              <strong> Temporäre Cookies (auch: Session- oder Sitzungscookies):</strong> Temporäre
               Cookies werden spätestens gelöscht, nachdem ein Nutzer ein Onlineangebot verlassen und
               sein Endgerät (z.B. Browser oder mobile Applikation) geschlossen hat.
             </li>
             <li class="mb-5">
-              <strong>Permanente Cookies:</strong> Permanente Cookies bleiben auch nach dem
+              <strong> Permanente Cookies:</strong> Permanente Cookies bleiben auch nach dem
               Schließen des Endgeräts gespeichert. So können beispielsweise der Log-in-Status
               gespeichert und bevorzugte Inhalte direkt angezeigt werden, wenn der Nutzer eine
               Website erneut besucht. Ebenso können die mithilfe von Cookies erhobenen Nutzerdaten
@@ -440,14 +440,14 @@
             </li>
           </ul>
           <p class="mb-5">
-            <strong>Allgemeine Hinweise zum Widerruf und Widerspruch (Opt-out):</strong>Nutzer
+            <strong> Allgemeine Hinweise zum Widerruf und Widerspruch (Opt-out):</strong>Nutzer
             können die von ihnen abgegebenen Einwilligungen jederzeit widerrufen und zudem einen
             Widerspruch gegen die Verarbeitung entsprechend den gesetzlichen Vorgaben, auch mittels
             der Privatsphäre-Einstellungen ihres Browsers, erklären.
           </p>
           <ul class="m-elements">
             <li class="mb-5">
-              <strong>Verarbeitete Datenarten:</strong> Meta-, Kommunikations- und Verfahrensdaten
+              <strong> Verarbeitete Datenarten:</strong> Meta-, Kommunikations- und Verfahrensdaten
               (z. B. IP-Adressen, Zeitangaben, Identifikationsnummern, beteiligte Personen).
             </li>
             <li class="mb-5">
