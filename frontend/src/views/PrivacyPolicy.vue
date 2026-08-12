@@ -1,44 +1,50 @@
 <template>
   <div class="flex min-h-screen items-center justify-center px-3 py-4 sm:px-4 lg:px-6">
-    <div class="flex h-[90vh] max-h-[90vh] w-full max-w-6xl flex-col overflow-hidden rounded-xl bg-[#FAEBD7] p-4 sm:p-6 lg:p-8">
+    <div
+      class="flex h-[90vh] max-h-[90vh] w-full max-w-6xl flex-col overflow-hidden rounded-xl bg-[#FAEBD7] p-4 sm:p-6 lg:p-8"
+    >
       <div class="flex justify-center">
         <h1 class="text-2xl font-bold sm:text-3xl">Privacy Policy</h1>
       </div>
 
       <div class="mt-4 flex justify-center overflow-y-auto sm:mt-6">
         <div class="w-full max-w-4xl prose prose-base sm:prose-lg">
-          <p class="text-base">Stand: 25. Juli 2026</p>
+          <p class="text-base font-bold text-center">Stand: 25. Juli 2026</p>
 
-          <h2 class="mb-0 text-2xl font-bold">Inhaltsübersicht</h2>
+          <h2 class="mt-5 text-2xl font-bold mb-5">Inhaltsübersicht:</h2>
           <ul class="index">
-            <li><a class="index-link" href="#m3">Verantwortlicher</a></li>
-            <li><a class="index-link" href="#mOverview">Übersicht der Verarbeitungen</a></li>
-            <li><a class="index-link" href="#m2427">Maßgebliche Rechtsgrundlagen</a></li>
-            <li><a class="index-link" href="#m27">Sicherheitsmaßnahmen</a></li>
-            <li><a class="index-link" href="#m25">Übermittlung von personenbezogenen Daten</a></li>
-            <li><a class="index-link" href="#m24">Internationale Datentransfers</a></li>
+            <li><a class="index-link" href="#m3">- Verantwortlicher</a></li>
+            <li><a class="index-link" href="#mOverview">- Übersicht der Verarbeitungen</a></li>
+            <li><a class="index-link" href="#m2427">- Maßgebliche Rechtsgrundlagen</a></li>
+            <li><a class="index-link" href="#m27">- Sicherheitsmaßnahmen</a></li>
+            <li>
+              <a class="index-link" href="#m25">- Übermittlung von personenbezogenen Daten</a>
+            </li>
+            <li><a class="index-link" href="#m24">- Internationale Datentransfers</a></li>
             <li>
               <a class="index-link" href="#m12"
-                >Allgemeine Informationen zur Datenspeicherung und Löschung</a
+                >- Allgemeine Informationen zur Datenspeicherung und Löschung</a
               >
             </li>
-            <li><a class="index-link" href="#m10">Rechte der betroffenen Personen</a></li>
+            <li><a class="index-link" href="#m10">- Rechte der betroffenen Personen</a></li>
             <li>
               <a class="index-link" href="#m225"
-                >Bereitstellung des Onlineangebots und Webhosting</a
+                >- Bereitstellung des Onlineangebots und Webhosting</a
               >
             </li>
-            <li><a class="index-link" href="#m134">Einsatz von Cookies</a></li>
-            <li><a class="index-link" href="#m182">Kontakt- und Anfrageverwaltung</a></li>
+            <li><a class="index-link" href="#m134">- Einsatz von Cookies</a></li>
+            <li><a class="index-link" href="#m182">- Kontakt- und Anfrageverwaltung</a></li>
           </ul>
-          <h2 id="m3">Verantwortlicher</h2>
-          <p>Vorname, Name / Firma<br />Straße, Hausnr.<br />PLZ, Ort, Land</p>
-          <p>
+          <h2 id="m3" class="text-xl font-bold sm:text-2xl mt-10">Verantwortlicher</h2>
+          <p class="font-bold ml-5 mt-3">
+            Butalov Andrei<br />Nordstraße, 44.<br />50170, Kerpen, Deutschland
+          </p>
+          <p class="font-bold mb-10 ml-5">
             E-Mail-Adresse:
-            <a href="mailto:vorname.name@beispielsdomain.eu">vorname.name@beispielsdomain.eu</a>
+            <a href="andrei.butalo@gmx.de">andrei.butalov@gmx.de</a>
           </p>
 
-          <h2 id="mOverview">Übersicht der Verarbeitungen</h2>
+          <h2 id="mOverview" class="text-xl font-bold sm:text-2xl mb-5">Übersicht der Verarbeitungen</h2>
           <p>
             Die nachfolgende Übersicht fasst die Arten der verarbeiteten Daten und die Zwecke ihrer
             Verarbeitung zusammen und verweist auf die betroffenen Personen.
@@ -66,7 +72,7 @@
             <li>Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit.</li>
             <li>Informationstechnische Infrastruktur.</li>
           </ul>
-          <h2 id="m2427">Maßgebliche Rechtsgrundlagen</h2>
+          <h2 id="m2427" class="text-xl font-bold sm:text-2xl mb-10 mt-10">Maßgebliche Rechtsgrundlagen</h2>
           <p>
             <strong>Maßgebliche Rechtsgrundlagen nach der DSGVO: </strong>Im Folgenden erhalten Sie
             eine Übersicht der Rechtsgrundlagen der DSGVO, auf deren Basis wir personenbezogene
@@ -124,7 +130,7 @@
             bestimmt.
           </p>
 
-          <h2 id="m27">Sicherheitsmaßnahmen</h2>
+          <h2 id="m27" class="text-xl font-bold sm:text-2xl mb-5 mt-10">Sicherheitsmaßnahmen</h2>
           <p>
             Wir treffen nach Maßgabe der gesetzlichen Vorgaben unter Berücksichtigung des Stands der
             Technik, der Implementierungskosten und der Art, des Umfangs, der Umstände und der
@@ -145,7 +151,7 @@
             durch datenschutzfreundliche Voreinstellungen.
           </p>
 
-          <h2 id="m25">Übermittlung von personenbezogenen Daten</h2>
+          <h2 id="m25" class="text-xl font-bold sm:text-2xl mb-5 mt-10">Übermittlung von personenbezogenen Daten</h2>
           <p>
             Im Rahmen unserer Verarbeitung von personenbezogenen Daten kommt es vor, dass diese an
             andere Stellen, Unternehmen, rechtlich selbstständige Organisationseinheiten oder
@@ -157,7 +163,7 @@
             Empfängern Ihrer Daten ab.
           </p>
 
-          <h2 id="m24">Internationale Datentransfers</h2>
+          <h2 id="m24" class="text-xl font-bold sm:text-2xl mb-5 mt-10">Internationale Datentransfers</h2>
           <p>
             Datenverarbeitung in Drittländern: Sofern wir Daten in einem Drittland (d.h., außerhalb
             der Europäischen Union (EU), des Europäischen Wirtschaftsraums (EWR)) verarbeiten oder
@@ -167,9 +173,9 @@
             in dem Drittland mittels eines Angemessenheitsbeschlusses anerkannt wurde (Art. 45
             DSGVO), dient dieser als Grundlage des Datentransfers. Im Übrigen erfolgen
             Datentransfers nur dann, wenn das Datenschutzniveau anderweitig gesichert ist,
-            insbesondere durch Standardvertragsklauseln (Art. 46 Abs. 2 lit. c) DSGVO,
-            ausdrückliche Einwilligung oder im Fall vertraglicher oder gesetzlich erforderlicher
-            Übermittlung (Art. 49 Abs. 1 DSGVO). Im Übrigen teilen wir Ihnen die Grundlagen der
+            insbesondere durch Standardvertragsklauseln (Art. 46 Abs. 2 lit. c) DSGVO, ausdrückliche
+            Einwilligung oder im Fall vertraglicher oder gesetzlich erforderlicher Übermittlung
+            (Art. 49 Abs. 1 DSGVO). Im Übrigen teilen wir Ihnen die Grundlagen der
             Drittlandübermittlung bei den einzelnen Anbietern aus dem Drittland mit, wobei die
             Angemessenheitsbeschlüsse als Grundlagen vorrangig gelten. Informationen zu
             Drittlandtransfers und vorliegenden Angemessenheitsbeschlüssen können dem
@@ -193,7 +199,7 @@
             von uns eingesetzten Diensteanbieter unter dem Data Privacy Framework zertifiziert sind.
           </p>
 
-          <h2 id="m12">Allgemeine Informationen zur Datenspeicherung und Löschung</h2>
+          <h2 id="m12" class="text-xl font-bold sm:text-2xl mb-5 mt-10">Allgemeine Informationen zur Datenspeicherung und Löschung</h2>
           <p>
             Wir löschen personenbezogene Daten, die wir verarbeiten, gemäß den gesetzlichen
             Bestimmungen, sobald die zugrundeliegenden Einwilligungen widerrufen werden oder keine
@@ -263,7 +269,7 @@
               </ul>
             </li>
           </ul>
-          <h2 id="m10">Rechte der betroffenen Personen</h2>
+          <h2 id="m10" class="text-xl font-bold sm:text-2xl mb-5 mt-10">Rechte der betroffenen Personen</h2>
           <p>
             Rechte der betroffenen Personen aus der DSGVO: Ihnen stehen als Betroffene nach der
             DSGVO verschiedene Rechte zu, die sich insbesondere aus Art. 15 bis 21 DSGVO ergeben:
@@ -319,7 +325,7 @@
             </li>
           </ul>
 
-          <h2 id="m225">Bereitstellung des Onlineangebots und Webhosting</h2>
+          <h2 id="m225" class="text-xl font-bold sm:text-2xl mb-5 mt-10">Bereitstellung des Onlineangebots und Webhosting</h2>
           <p>
             Wir verarbeiten die Daten der Nutzer, um ihnen unsere Online-Dienste zur Verfügung
             stellen zu können. Zu diesem Zweck verarbeiten wir die IP-Adresse des Nutzers, die
@@ -378,7 +384,7 @@
               Klärung des jeweiligen Vorfalls von der Löschung ausgenommen.
             </li>
           </ul>
-          <h2 id="m134">Einsatz von Cookies</h2>
+          <h2 id="m134" class="text-xl font-bold sm:text-2xl mb-5 mt-10">Einsatz von Cookies</h2>
           <p>
             Cookies sind kleine Textdateien bzw. sonstige Speichervermerke, die Informationen auf
             Endgeräten speichern und aus ihnen auslesen. Zum Beispiel, um den Log-in-Status in einem
@@ -450,7 +456,7 @@
             </li>
             <li class="">
               <strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f)
-              DSGVO). Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO.
+              DSGVO. Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO.
             </li>
           </ul>
           <p>
@@ -488,7 +494,7 @@
               >
             </li>
           </ul>
-          <h2 id="m182">Kontakt- und Anfrageverwaltung</h2>
+          <h2 id="m182" class="text-xl font-bold sm:text-2xl mb-5 mt-10">Kontakt- und Anfrageverwaltung</h2>
           <p>
             Bei der Kontaktaufnahme mit uns (z.B. per Post, Kontaktformular, E-Mail, Telefon oder
             via soziale Medien) sowie im Rahmen bestehender Nutzer- und Geschäftsbeziehungen werden
