@@ -451,7 +451,7 @@
               (z. B. IP-Adressen, Zeitangaben, Identifikationsnummern, beteiligte Personen).
             </li>
             <li class="mb-5">
-              <strong>Betroffene Personen:</strong> Nutzer (z. B. Webseitenbesucher, Nutzer von
+              <strong>Betroffene Personen:</strong> Nutzer (z.B. Webseitenbesucher, Nutzer von
               Onlinediensten).
             </li>
             <li class="mb-5">
