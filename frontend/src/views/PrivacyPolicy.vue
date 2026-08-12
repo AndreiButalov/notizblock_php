@@ -1,7 +1,7 @@
 <template>
   <div class="flex min-h-screen items-center justify-center px-3 py-4 sm:px-4 lg:px-6">
     <div
-      class="flex h-[90vh] max-h-[90vh] w-full max-w-6xl flex-col overflow-hidden rounded-xl bg-[#FAEBD7] p-4 sm:p-6 lg:p-8"
+      class="flex h-[80vh] max-h-[90vh] w-full max-w-6xl flex-col overflow-hidden rounded-xl bg-[#FAEBD7] p-4 sm:p-6 lg:p-8"
     >
       <div class="flex justify-center">
         <h1 class="text-2xl font-bold sm:text-3xl">Privacy Policy</h1>
