@@ -1,135 +1,248 @@
 # Notizblock PHP
 
-Eine einfache Full-Stack-Anwendung mit Symfony (Backend) und Vue 3 (Frontend), die über Docker gestartet wird.
+Eine moderne Full-Stack-Anwendung mit Symfony 8.1 (Backend) und Vue 3 (Frontend). Das Projekt ist vollständig für Docker containerisiert und wird über Docker Compose orchestriert.
 
-## Technologien
+## 🚀 Technologien
 
-- Backend: PHP 8.4 + Symfony 8.1
-- Frontend: Vue 3 + Vite
-- Datenbank: PostgreSQL 16
-- Containerisierung: Docker + Docker Compose
+| Komponente | Stack |
+|-----------|-------|
+| **Backend** | PHP 8.4 + Symfony 8.1 |
+| **Frontend** | Vue 3 + Vite |
+| **Datenbank** | PostgreSQL 16 |
+| **Containerisierung** | Docker + Docker Compose |
 
-## Voraussetzungen
+## 📋 Systemanforderungen
 
-Bevor du startest, stelle sicher, dass folgendes auf deinem Computer installiert ist:
+Dieses Projekt läuft **nur mit Docker**. Folgende Tools müssen installiert sein:
 
-- Docker Desktop oder Docker Engine
-- Docker Compose
-- Git
+- **Docker Desktop** (Windows/Mac) oder **Docker Engine** + **Docker Compose** (Linux)
+- **Git**
 
-Prüfe die Installation mit:
+Installationen prüfen:
 
 ```bash
 docker --version
 docker compose version
 ```
 
-## Projekt klonen
+## 🏃 Schnellstart
+
+### 1. Repository klonen
 
 ```bash
 git clone <dein-repository-url>
 cd notizblock_php
 ```
 
-## Installation und Start mit Docker
-
-Im Projektroot (dort, wo auch die Datei `docker-compose.yml` liegt) führe den folgenden Befehl aus:
+### 2. Docker-Container starten
 
 ```bash
 docker compose up --build
 ```
 
-Dieser Befehl baut die Container automatisch und startet anschließend:
+Dieser Befehl:
+- Baut die Docker Images für Backend und Frontend
+- Startet die PostgreSQL-Datenbank
+- Mountet die Quellcodes der Containers
 
-- Frontend: http://localhost:5173
-- Backend API: http://localhost:8000
-- PostgreSQL: localhost:5432
+### 3. Zugriff auf die Anwendung
 
-## Container stoppen
+Nach dem Starten sind folgende URLs verfügbar:
 
+| Service | URL |
+|---------|-----|
+| **Frontend** | http://localhost:5173 |
+| **Backend API** | http://localhost:8000 |
+| **PostgreSQL** | localhost:5432 |
+
+## 🐳 Docker Befehle
+
+### Container starten
+```bash
+docker compose up
+```
+
+### Container im Hintergrund starten
+```bash
+docker compose up -d
+```
+
+### Container stoppen
 ```bash
 docker compose down
 ```
 
-Wenn du die Datenbank ebenfalls komplett löschen möchtest, kannst du zusätzlich den Volume-Reset ausführen:
-
+### Container stoppen und Datenbank löschen
 ```bash
 docker compose down -v
 ```
 
-## Logs ansehen
-
+### Logs aller Container anzeigen
 ```bash
 docker compose logs -f
 ```
 
-Oder nur für einen Service:
-
+### Logs eines bestimmten Services
 ```bash
 docker compose logs -f backend
 docker compose logs -f frontend
 docker compose logs -f database
 ```
 
-## Wichtige Konfiguration
-
-Die Docker-Umgebung ist in der Datei `docker-compose.yml` konfiguriert:
-
-- `backend` läuft auf Port `8000`
-- `frontend` läuft auf Port `5173`
-- `database` verwendet PostgreSQL auf Port `5432`
-- Die Verbindung zur Datenbank wird im Backend über `DATABASE_URL` gesetzt
-
-## Neuladen nach Änderungen
-
-Wenn du nur den Code geändert hast, reicht oft ein Neustart der betroffenen Container:
-
+### Container neu starten (nach Code-Änderungen)
 ```bash
 docker compose restart backend
 docker compose restart frontend
 ```
 
-Wenn du neue Abhängigkeiten oder Änderungen an den Dockerfiles gemacht hast, rebuildest du das Projekt:
-
+### Kompletter Rebuild (nach Abhängigkeitsänderungen)
 ```bash
 docker compose up --build
 ```
 
-## Häufige Probleme
+## 🔧 Konfiguration
 
-### 1. Port schon belegt
+Die gesamte Docker-Konfiguration befindet sich in `docker-compose.yml`:
 
-Wenn `5173` oder `8000` bereits verwendet werden, ändere die Port-Map in `docker-compose.yml`.
+### Services
 
-### 2. Container starten nicht
+**database** (PostgreSQL 16)
+- Port: `5432`
+- User: `app`
+- Passwort: `changeme`
+- Datenbank: `app`
 
-Prüfe die Logs mit:
+**backend** (Symfony 8.1)
+- Port: `8000`
+- Python/CLI Server
+- Umgebung: `dev` (optimiert für Entwicklung)
 
-```bash
-docker compose logs
+**frontend** (Vue 3 + Vite)
+- Port: `5173`
+- Dev Server mit Hot Module Replacement
+- API-URL: `http://localhost:8000/api`
+
+## 📂 Projektstruktur
+
 ```
-
-### 3. Backend kann keine Verbindung zur Datenbank herstellen
-
-Stelle sicher, dass der `database`-Container gestartet ist und die Umgebungsvariablen korrekt gesetzt sind.
-
-## Projektstruktur
-
-```text
 notizblock_php/
 ├── backend/
 │   ├── Dockerfile
 │   ├── composer.json
-│   └── src/
+│   ├── src/
+│   ├── config/
+│   ├── public/
+│   └── migrations/
 ├── frontend/
 │   ├── Dockerfile
 │   ├── package.json
-│   └── src/
+│   ├── src/
+│   ├── vite.config.js
+│   └── public/
 ├── docker-compose.yml
 ├── README.md
 └── .gitignore
 ```
 
-## Entwicklungsstatus
+## 🐛 Häufige Probleme
 
-Die Anwendung ist für die lokale Entwicklung mit Docker vorbereitet. Für Production-Umgebungen sollten zusätzlich sichere Umgebungsvariablen und eine passende PostgreSQL-Konfiguration gesetzt werden.
+### Port ist bereits in Benutzung
+
+**Fehler:** "bind: address already in use"
+
+**Lösung:** Port in `docker-compose.yml` ändern:
+```yaml
+ports:
+  - "8001:8000"  # Neuer Port statt 8000
+```
+
+### Container starten nicht
+
+**Lösung:** Logs prüfen
+```bash
+docker compose logs
+docker compose logs backend
+```
+
+### Frontend kann Backend nicht erreichen
+
+Sicherstellen, dass:
+1. Der `backend`-Container läuft: `docker compose ps`
+2. Die Umgebungsvariable `VITE_API_URL` korrekt gesetzt ist
+3. Der `depends_on` in der `docker-compose.yml` richtig ist
+
+### Datenbank-Verbindungsfehler
+
+**Lösung:**
+```bash
+# Datenbank-Container neu starten
+docker compose restart database
+
+# Oder komplett löschen und neu anlegen
+docker compose down -v
+docker compose up
+```
+
+### Cache-Probleme
+
+```bash
+# Docker-Cache löschen
+docker compose down
+docker system prune -a
+docker compose up --build
+```
+
+## 💡 Entwicklung
+
+### Code-Änderungen
+
+Nach Änderungen am Code:
+- **Frontend**: Automatisches Reload dank Vite HMR
+- **Backend**: Container neu starten für PHP-Änderungen
+  ```bash
+  docker compose restart backend
+  ```
+
+### Neue Abhängigkeiten hinzufügen
+
+**Backend (PHP):**
+```bash
+# Container mit Bash starten
+docker compose exec backend bash
+
+# Composer Paket hinzufügen
+composer require package-name
+
+# Container verlassen
+exit
+```
+
+**Frontend (Node.js):**
+```bash
+# Container mit Bash starten
+docker compose exec frontend bash
+
+# NPM Paket hinzufügen
+npm install package-name
+
+# Container verlassen
+exit
+```
+
+Danach Container neu bauen:
+```bash
+docker compose up --build
+```
+
+## 📦 Production-Deployment
+
+Für Production-Umgebungen:
+- `APP_ENV` auf `prod` setzen
+- `APP_DEBUG` auf `0` setzen
+- `APP_SECRET` mit sicherem Value überschreiben
+- Datenbankpasswort ändern (`POSTGRES_PASSWORD`)
+- Environment-Variablen in `.env.prod` oder Docker Secrets verwalten
+
+## 📝 Lizenz
+
+MIT
