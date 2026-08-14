@@ -57,30 +57,6 @@ Nach dem Starten sind folgende URLs verfügbar:
 
 ## 🐳 Docker Befehle
 
-### Container starten
-```bash
-docker compose up
-```
-
-### Container im Hintergrund starten
-```bash
-docker compose up -d
-```
-
-### Container stoppen
-```bash
-docker compose down
-```
-
-### Container stoppen und Datenbank löschen
-```bash
-docker compose down -v
-```
-
-### Logs aller Container anzeigen
-```bash
-docker compose logs -f
-```
 
 ### Logs eines bestimmten Services
 ```bash
@@ -194,14 +170,6 @@ docker compose up --build
 
 ## 💡 Entwicklung
 
-### Code-Änderungen
-
-Nach Änderungen am Code:
-- **Frontend**: Automatisches Reload dank Vite HMR
-- **Backend**: Container neu starten für PHP-Änderungen
-  ```bash
-  docker compose restart backend
-  ```
 
 ### Neue Abhängigkeiten hinzufügen
 
@@ -234,15 +202,3 @@ Danach Container neu bauen:
 docker compose up --build
 ```
 
-## 📦 Production-Deployment
-
-Für Production-Umgebungen:
-- `APP_ENV` auf `prod` setzen
-- `APP_DEBUG` auf `0` setzen
-- `APP_SECRET` mit sicherem Value überschreiben
-- Datenbankpasswort ändern (`POSTGRES_PASSWORD`)
-- Environment-Variablen in `.env.prod` oder Docker Secrets verwalten
-
-## 📝 Lizenz
-
-MIT
